@@ -1,6 +1,14 @@
-/* Mise en page du logo du header du site OhMyFood */
+/* Mise en page du logo du header du site OhMyFood version Mobile - Tablette */
+@media screen and (min-width: 375px)
+{
 #logo{
-    padding-top: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
-    text-align: center;
+    font-family: "Shrikhand";
 }
+}
+/* Fin logo du site Mobile - Tablette - PC */ 
