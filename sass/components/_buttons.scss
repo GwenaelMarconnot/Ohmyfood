@@ -1,10 +1,10 @@
 /* Les paramètres CSS des boutons sur toutes les versions */
 @media screen and (min-width: 375px){
     .retour{
-   display: flex;
-   align-items: center;
-   justify-content: left;
-   gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
     }
     .bouton_explorer{
     font-size: 20px;
@@ -12,12 +12,17 @@
     display: flex;
     margin: auto;
     padding: 15px;
-    border: 1px solid transparent;
+    border: none;
     border-radius: 100px;
     background: linear-gradient(to left top, #9356DC, #FF79DA);
     color: white;
     box-shadow: #a5a5a5 0 5px 10px;
     font-family: "Roboto";
+    &:hover{
+    background: linear-gradient(to left top, #c08aff, #fb97df);
+    color: white;
+    box-shadow:lightsteelblue 5px 5px 5px 5px;
+    }
 }
     .bouton_commander{
     font-weight: 500;
@@ -27,11 +32,16 @@
     margin: auto;
     padding: 15px;
     margin-top: 15px;
-    border: 1px solid transparent;
+    border: none;
     border-radius: 100px;
     background: linear-gradient(to left top, #9356DC, #FF79DA);
     color: white;
     box-shadow: 0 0 10px #d4d4d4;
     font-family: "Roboto";
+    &:hover{
+    background: linear-gradient(to left top, #c08aff, #fb97df);
+    color: white;
+    box-shadow: 5px 5px  5px 5px lightsteelblue;
+        }
     }
 }

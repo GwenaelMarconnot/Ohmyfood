@@ -54,12 +54,13 @@
 }
     .choix{
     align-items: center;
-    border: #9356DC 5px solid;
+    border: #9356DC 3px solid;
     color: white;
     background: #9356DC;
     border-radius: 20px;
     height: 18px;
     width: 18px;
+    margin-left: -10px;
 }
     .texte_description{
     display: flex;
@@ -67,25 +68,21 @@
     height: 50px;
     width: 320px;
     border-radius: 20px;
-    border: #F2F2F2 3px solid;
     background-color: #f6f6f6;
     align-items: center;
     gap: 30px;
-    box-shadow: #d4d4d4 5px 5px 10px;
+    box-shadow: #e7e7e7 5px 5px 10px;
     font-weight: bold;
     margin: 5px;
     margin-left: 20px;
 }
     .texte_description:hover{
-    cursor: pointer;
-    box-shadow: 0 0 10px #9356DC;
-    opacity: 0.8;
-    background: #9356DC;
+    box-shadow: rgb(170, 170, 170) 5px 5px 10px;
+    background-color: #eddefcb8;
 }
-    #icon_texte{
-    display: flex;
-    align-items: center;
-}
+    #icon_texte:hover{
+    background-color: #eddefcb8;
+    }
     /* Main de la page */ 
     .section0{
     display: flex;
@@ -110,7 +107,7 @@
    padding-left: 10px;
 }
     .cardsrestaurants{
-    gap: 5px;
+    gap: 20px;
     display: flex;
     width: 100%;
     height: 100%;
@@ -131,14 +128,14 @@
     width: 100%;
     display:flex;
 }
-    .imgRestaurant > img{
+    .imgRestaurant img{
     width: 100%;
-    height: 240px;
+    height: 215px;
     object-fit: cover;
     display: flex;
     border-radius: 20px 20px 20px 20px;
 }
-.imgRestaurant .Nouveau{
+    .imgRestaurant .Nouveau{
     align-self: flex-start;
     right: 20px;
     background-color: #99E2D0;
@@ -150,8 +147,12 @@
     position: absolute;
     margin: 15px;
 }
+    .imgRestaurant a{
+    width: 100%;
+}
     .detailRestaurant{
     display:flex;
+    position: relative;
     flex-direction: column;
     border-radius: 20px 20px 20px 20px;
     padding: 5px;

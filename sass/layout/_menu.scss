@@ -3,13 +3,6 @@
     .titre{
     font-family: "Shrikhand";
     padding-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-    .titre i{
-    font-size: 20px;
-    margin-right: 20px;
 }
     .sous_titre{
     font-family: "Roboto";
@@ -74,18 +67,6 @@
     font-weight: bold;
     font-family: "Roboto";
 }
-    .fa-heart {
-    padding:.2em;
-}
-    .fa-heart::before {
-    content: "\f004";
-    transition: color 1s ease-out;
-}
-    .fa-heart:hover::before{
-    color: #FF79DA;
-    cursor: pointer;
-    font-weight: bold;
-}
     .menutext{
     align-content: center;
     font-family: "Roboto";
@@ -122,11 +103,6 @@
     padding-left: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-    .titre i{
-    font-size: 20px;
-    margin-right: 20px;
 }
     .sous_titre{
     font-family: "Roboto";
@@ -191,18 +167,6 @@
     gap: 10px;
     font-weight: bold;
     font-family: "Roboto";
-}
-    .fa-heart {
-    padding:.2em;
-}
-    .fa-heart::before {
-    content: "\f004";
-    transition: color 1s ease-out;
-}
-    .fa-heart:hover::before{
-    color: #FF79DA;
-    cursor: pointer;
-    font-weight: bold;
 }
     .menutext{
     align-content: center;
@@ -294,18 +258,6 @@
     gap: 10px;
     font-weight: bold;
     font-family: "Roboto";
-}
-    .fa-heart {
-    padding:.2em;
-}
-    .fa-heart::before {
-    content: "\f004";
-    transition: color 1s ease-out;
-}
-    .fa-heart:hover::before{
-    color: #FF79DA;
-    cursor: pointer;
-    font-weight: bold;
 }
     .menutext{
     align-content: center;
