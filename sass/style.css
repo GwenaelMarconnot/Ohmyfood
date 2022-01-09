@@ -520,7 +520,7 @@
     color: #5f867c;
     font-weight: bold;
     font-size: 18px;
-    position: fixed;
+    position: absolute;
     margin: 15px;
   }
   .imgRestaurant a {
