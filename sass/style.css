@@ -512,14 +512,15 @@
   }
   .imgRestaurant .Nouveau {
     align-self: flex-start;
-    right: 500px;
+    right: 550px;
+    display: flex;
     background-color: #99E2D0;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     color: #5f867c;
     font-weight: bold;
     font-size: 18px;
-    position: absolute;
+    position: fixed;
     margin: 15px;
   }
   .imgRestaurant a {
@@ -919,7 +920,7 @@ head {
   /* Bouton coeur menu */
   .fa-heart {
     position: absolute;
-    top: 23px;
+    top: 20px;
     right: 15px;
     font-size: larger;
   }
@@ -988,7 +989,7 @@ head {
   /* Bouton coeur menu */
   .fa-heart {
     position: absolute;
-    top: 30px;
+    top: 18px;
     right: 20px;
     font-size: larger;
   }

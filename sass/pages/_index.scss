@@ -473,14 +473,15 @@
     }
     .imgRestaurant .Nouveau{
         align-self: flex-start;
-        right: 500px;
+        right: 550px;
+        display: flex;
         background-color: #99E2D0;
         padding: 10px 20px 10px 20px;
         border-radius: 5px;
         color: #5f867c;
         font-weight: bold;
         font-size: 18px;
-        position: absolute;
+        position:fixed;
         margin: 15px;
     }
     .imgRestaurant a{
