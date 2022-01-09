@@ -1,7 +1,7 @@
 /* Menu version Mobile */
 @media screen and (min-width: 375px) and (max-width: 549px){ 
     .titre{
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     padding-left: 20px;
 }
     .sous_titre{
@@ -63,19 +63,25 @@
     gap: 10%;
 }
     .menutitre{
+    width: 250px;
     gap: 10px;
     font-weight: bold;
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
     .menutext{
     align-content: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 13px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
     .prix{
-    font-family: "Roboto";
-    float: right;
-    padding-right: 10px;
+    position: absolute;
+    font-family: 'Roboto';
+    right: 5px;
+    font-size: small;
     font-weight: bold;
 }
     .bouton{
@@ -91,7 +97,7 @@
     background: linear-gradient(to left top, #9356DC, #FF79DA);
     color: white;
     box-shadow: 0 0 10px #d4d4d4;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     }
 }
 /* Fin menu version Mobile */
@@ -99,7 +105,7 @@
 /* Début menu version Tablette */
 @media screen and (min-width: 550px) and (max-width: 768px){ 
     .titre{
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -166,18 +172,33 @@
     .menutitre{
     gap: 10px;
     font-weight: bold;
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
     .menutext{
     align-content: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 13px;
 }
     .prix{
-    font-family: "Roboto";
+    font-family: 'Roboto';
     float: right;
     padding-right: 10px;
     font-weight: bold;
+    }
+    .bouton{
+    font-weight: 500;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background: linear-gradient(to left top, #9356DC, #FF79DA);
+    color: white;
+    box-shadow: 0 0 10px #d4d4d4;
+    font-family: 'Roboto';
     }
 }
 /* Fin menu version tablette */ 
@@ -185,7 +206,7 @@
 /* Début menu version PC */
 @media screen and (min-width: 769px){
 .titre{
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -196,7 +217,7 @@
     margin-right: 20px;
 }
     .sous_titre{
-    font-family: "Roboto";
+    font-family: 'Roboto';
     padding-top: 20px;
     padding-left: 10px;
 }
@@ -257,15 +278,15 @@
     .menutitre{
     gap: 10px;
     font-weight: bold;
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
     .menutext{
     align-content: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 13px;
 }
     .prix{
-    font-family: "Roboto";
+    font-family: 'Roboto';
     float: right;
     padding-right: 10px;
     font-weight: bold;
@@ -283,7 +304,7 @@
     background: linear-gradient(to left top, #9356DC, #FF79DA);
     color: white;
     box-shadow: 0 0 10px #d4d4d4;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     }
 }
-/* Fin menu version PC */ 
+/* Fin menu version PC */

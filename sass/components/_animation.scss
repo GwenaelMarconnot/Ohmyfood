@@ -1,16 +1,17 @@
+/* Début animation OhMyFood version Mobile */
 @media screen and (min-width: 375px) and (max-width: 549px){ 
 /* Bouton coeur menu */
     .fa-heart{
-    position: absolute;
-    top: 13px;
-    right: 10px;
-    font-size: larger;
-    &:hover{
-    background: linear-gradient(#9356dc, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: color 1s ease-out;
-    font-weight: bold;
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        font-size: larger;
+        &:hover{
+        background: linear-gradient(#9356dc, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: color 1s ease-out;
+        font-weight: bold;
     }
 }
 .Menu_restaurant{
@@ -27,56 +28,169 @@
 }  
 }
 }
-.coche{
-    display: flex;
-    position: absolute;
-    right: 14px;
-    border-radius: 0 15px 15px 0;
+    .coche{
+        display: flex;
+        position: absolute;
+        right: 14px;
+        border-radius: 0 15px 15px 0;
 }
-.fa-check-circle{
-    border: transparent 1px solid;
-    color: transparent;
-    width: 50px;
+    .fa-check-circle{
+        border: transparent 1px solid;
+        color: transparent;
+        width: 50px;
 }
-.fa-check-circle:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 54px;
-    width: 53px;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    border-radius: 0 15px 15px 0;
-    animation: fade-in-right 0.3s ease-out forwards;
-}
+    .fa-check-circle:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        width: 53px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        border-radius: 0 15px 15px 0;
+        animation: fade-in-right 0.3s ease-out forwards;
+        }
 @keyframes fade-in-right {
     0% {
-    transform: translateX(25px);
-    transform: rotate(0deg);
-    background-color: white;
-    opacity: 0;
+    background-color: #ffff;
+    transform: rotateZ(0deg);
     }
     100% {
-    transform: translateX(0px);
-    transform: rotate(360deg);
-    background-color: #99E2d0;
-    opacity: 1;
-    }
+    background-color: #99E2D0;
+    transform: rotateZ(360deg);
+    }  
 }
+/* Fin animation OhMyFood version Mobile */
+
+/* Début animation OhMyFood version Tablette */
 @media screen and (min-width: 550px) and (max-width: 768px){
+/* Bouton coeur menu */
     .fa-heart{
-    background-color: #F2F2F2;
-    position: relative;
-    top: -50px;
-    right: -300px;
-    font-size: larger;
-    &:hover{
-    background: linear-gradient(#9356dc, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: color 1s ease-out;
-    font-weight: bold;
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        font-size: larger;
+        &:hover{
+        background: linear-gradient(#9356dc, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: color 1s ease-out;
+        font-weight: bold;
+        }
+}
+.Menu_restaurant{
+    animation: fade-in-top 1s;
     }
+@keyframes fade-in-top {
+0% {
+    transform: translateY(-50px);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0px);
+    opacity: 1;
+}  
+}
+    .coche{
+        display: flex;
+        position: absolute;
+        right: 22px;
+        border-radius: 0 15px 15px 0;
+}
+    .fa-check-circle{
+        border: transparent 1px solid;
+        color: transparent;
+        width: 50px;
+}
+    .fa-check-circle:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        width: 53px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        border-radius: 0 15px 15px 0;
+        animation: fade-in-right 0.3s ease-out forwards;
+    }
+    @keyframes fade-in-right {
+        0% {
+            background-color: #ffff;
+            transform: rotateZ(0deg);
+        }
+        100% {
+            background-color: #99E2D0;
+            transform: rotateZ(360deg);
+        }  
+}
+/* Fin animation OhMyFood version tablette */
+
+/* Début animation OhMyFood version PC */
+@media screen and (min-width: 769px){
+    /* Bouton coeur menu */
+    .fa-heart{
+        cursor: pointer;
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        font-size: larger;
+        &:hover{
+        cursor: pointer;
+        background: linear-gradient(#9356dc, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: color 1s ease-out;
+        font-weight: bold;
+        }
+    }
+    .Menu_restaurant{
+        animation: fade-in-top 1s;
+        }
+    @keyframes fade-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }  
+    }
+    .coche{
+        display: flex;
+        position: absolute;
+        right: 40px;
+        border-radius: 0 15px 15px 0;
+    }
+    .fa-check-circle{
+        border: transparent 1px solid;
+        color: transparent;
+        width: 50px;
+    }
+    .fa-check-circle:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        width: 53px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        border-radius: 0 15px 15px 0;
+        animation: fade-in-right 0.3s ease-out forwards;
+        }
+        @keyframes fade-in-right {
+            0% {
+                background-color: #ffff;
+                transform: rotateZ(0deg);
+            }
+            100% {
+                background-color: #99E2D0;
+                transform: rotateZ(0deg);
+            }  
 }
 }
+}
+/* Fin animation OhMyFood version PC */
