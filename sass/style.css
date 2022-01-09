@@ -919,8 +919,8 @@ head {
   /* Bouton coeur menu */
   .fa-heart {
     position: absolute;
-    top: 13px;
-    right: 10px;
+    top: 23px;
+    right: 15px;
     font-size: larger;
   }
   .fa-heart:hover {
@@ -988,8 +988,8 @@ head {
   /* Bouton coeur menu */
   .fa-heart {
     position: absolute;
-    top: 13px;
-    right: 10px;
+    top: 30px;
+    right: 20px;
     font-size: larger;
   }
   .fa-heart:hover {
