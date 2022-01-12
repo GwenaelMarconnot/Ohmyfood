@@ -792,7 +792,7 @@ head {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100px;
+    width: 350px;
   }
   .prix {
     position: absolute;
