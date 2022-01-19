@@ -674,6 +674,12 @@ head {
     font-weight: bold;
     font-family: 'Roboto';
   }
+  .Nom_description:hover .menutitre {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+  }
   .menutext {
     align-content: center;
     font-family: 'Roboto';
@@ -783,6 +789,12 @@ head {
     font-weight: bold;
     font-family: 'Roboto';
   }
+  .Nom_description:hover .menutitre {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+  }
   .menutext {
     align-content: center;
     font-family: 'Roboto';
@@ -792,7 +804,7 @@ head {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 350px;
+    width: 100px;
   }
   .prix {
     position: absolute;
@@ -896,6 +908,12 @@ head {
     font-weight: bold;
     font-family: 'Roboto';
   }
+  .Nom_description:hover .menutitre {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+  }
   .menutext {
     align-content: center;
     font-family: 'Roboto';
@@ -936,7 +954,8 @@ head {
 @media screen and (min-width: 375px) and (max-width: 549px) {
   /* Loader du site (index) OhMyFood */
   #floatingBarsG {
-    position: relative;
+    z-index: -1;
+    position: fixed;
     width: 50px;
     height: 62px;
   }
@@ -950,7 +969,6 @@ head {
     animation-name: fadeG;
     animation-duration: 0.48s;
     animation-iteration-count: infinite;
-    animation-direction: linear;
   }
   #rotateG_01 {
     left: 0;
@@ -1016,9 +1034,11 @@ head {
   border: transparent 1px solid;
   color: transparent;
   width: 50px;
+  transform: rotateY(360deg);
 }
 
 .Nom_description:hover .fa-check-circle {
+  transform: rotateY(0deg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1253,8 +1273,10 @@ head {
     border: transparent 1px solid;
     color: transparent;
     width: 50px;
+    transform: rotate(360deg);
   }
   .Nom_description:hover .fa-check-circle {
+    transform: rotate(0deg);
     display: flex;
     justify-content: center;
     align-items: center;

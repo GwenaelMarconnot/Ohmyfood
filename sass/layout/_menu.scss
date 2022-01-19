@@ -68,6 +68,12 @@
     font-weight: bold;
     font-family: 'Roboto';
 }
+    .Nom_description:hover .menutitre{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+}
     .menutext{
     align-content: center;
     font-family: 'Roboto';
@@ -177,6 +183,12 @@
     font-weight: bold;
     font-family: 'Roboto';
 }
+    .Nom_description:hover .menutitre{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+}
     .menutext{
     align-content: center;
     font-family: 'Roboto';
@@ -186,7 +198,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 350px;
+    width: 100px;
 }
     .prix{
     position: absolute;
@@ -289,6 +301,12 @@
     gap: 10px;
     font-weight: bold;
     font-family: 'Roboto';
+}
+    .Nom_description:hover .menutitre{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
 }
     .menutext{
     align-content: center;
