@@ -954,20 +954,20 @@ head {
 @media screen and (min-width: 375px) and (max-width: 549px) {
   /* Loader du site (index) OhMyFood */
   #floatingBarsG {
+    z-index: 1;
     position: fixed;
     width: 50px;
     height: 62px;
     animation-name: visiblenovisible;
     animation-fill-mode: forwards;
+    animation-duration: 3s;
   }
   @keyframes visiblenovisible {
     0% {
       opacity: 1;
-      z-index: 1;
     }
     100% {
       opacity: 0;
-      z-index: 0;
     }
   }
   .blockG {
