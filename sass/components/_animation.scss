@@ -21,8 +21,8 @@
 .blockG{
 	position:absolute;
 	background-color:#C4C4C4;
-	width:100vw;
-	height:100vh;
+	width: 150vw;
+	height:150vh;
 	border-radius:7px 7px 0 0;
 	animation-name:fadeG;
 	animation-duration:0.48s;
@@ -137,21 +137,31 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 @media screen and (min-width: 550px) and (max-width: 768px){
 /* Loader du site (index) OhMyFood */ 
 #floatingBarsG{
-	position:relative;
-	width:50px;
-	height:60px;
+    z-index: 1;
+	position:fixed;
+	width:100%;
+	height:100%;
+    animation-name: visiblenovisible;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+@keyframes visiblenovisible{
+0%{
+    opacity: 1;
+} 
+100%{
+    opacity: 0;
+}
 }
 .blockG{
 	position:absolute;
 	background-color:#C4C4C4;
-	width:10px;
-	height:20px;
-	border-radius:7px 7px 0px 0px;
-	transform:scale(0.4);
+	width: 150vw;
+	height:150vh;
+	border-radius:7px 7px 0 0;
 	animation-name:fadeG;
 	animation-duration:0.48s;
 	animation-iteration-count:infinite;
-	animation-direction:linear;
 }
 #rotateG_01{
 	left:0;
@@ -167,10 +177,10 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 }
 @keyframes fadeG{
 	0%{
-		background-color:#000000
+		background-color:#000000;
 	}
 	100%{
-		background-color:#C4C4C4
+		background-color:#C4C4C4;
 	}
 }
 /* Fin Loader du site (index) OhMyFood */
@@ -252,22 +262,31 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 @media screen and (min-width: 769px) and (max-width: 1600px){
 /* Loader du site (index) OhMyFood */ 
 #floatingBarsG{
-	position:relative;
-	width:50px;
-	height:62px;
+    z-index: 1;
+	position:fixed;
+	width:100%;
+	height:100%;
+    animation-name: visiblenovisible;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+@keyframes visiblenovisible{
+0%{
+    opacity: 1;
+} 
+100%{
+    opacity: 0;
+}
 }
 .blockG{
 	position:absolute;
 	background-color:#C4C4C4;
-	width:8px;
-	height:19px;
-    flex: 1;
+	width: 150vw;
+	height:150vh;
 	border-radius:7px 7px 0 0;
-	transform:scale(0.4);
 	animation-name:fadeG;
 	animation-duration:0.48s;
 	animation-iteration-count:infinite;
-	animation-direction:linear;
 }
 #rotateG_01{
 	left:0;
@@ -283,10 +302,10 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 }
 @keyframes fadeG{
 	0%{
-		background-color:#000000
+		background-color:#000000;
 	}
 	100%{
-		background-color:#C4C4C4
+		background-color:#C4C4C4;
 	}
 }
 /* Fin Loader du site (index) OhMyFood */
