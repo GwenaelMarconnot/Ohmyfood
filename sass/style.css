@@ -646,12 +646,11 @@ head {
   .Menu_restaurants {
     gap: 5px;
     display: flex;
-    width: 350px;
     height: 100%;
     flex-direction: column;
   }
   .Menu_restaurant {
-    width: 100%;
+    width: 95%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -1048,6 +1047,10 @@ head {
   border-radius: 0 15px 15px 0;
 }
 
+.fa-check-circle {
+  transform: rotate(360deg);
+}
+
 .coche:hover .fa-check-circle {
   transform: rotateZ(0);
 }
@@ -1185,7 +1188,7 @@ head {
     border-radius: 0 15px 15px 0;
   }
   .coche:hover .fa-check-circle {
-    transform: rotateZ(0);
+    transform: rotate(0);
   }
   .fa-check-circle {
     border: transparent 1px solid;
@@ -1193,7 +1196,7 @@ head {
     width: 50px;
   }
   .fa-check-circle:hover {
-    transform: rotateZ(360deg);
+    transform: rotate(360deg);
   }
   .Nom_description:hover .fa-check-circle {
     display: flex;
@@ -1255,8 +1258,8 @@ head {
   .blockG {
     position: absolute;
     background-color: #C4C4C4;
-    width: 150vw;
-    height: 150vh;
+    width: 100%;
+    height: 100%;
     border-radius: 7px 7px 0 0;
     animation-name: fadeG;
     animation-duration: 0.48s;
