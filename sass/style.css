@@ -606,6 +606,9 @@ head {
 
 /* Menu version Mobile */
 @media screen and (min-width: 375px) and (max-width: 549px) {
+  p {
+    margin: 0;
+  }
   .titre {
     font-family: 'Shrikhand';
     padding-left: 20px;
@@ -666,7 +669,6 @@ head {
     background: white;
     box-shadow: 0 0 10px #d4d4d4;
     justify-content: center;
-    gap: 10%;
   }
   .menutitre {
     width: 250px;
@@ -684,18 +686,17 @@ head {
     align-content: center;
     font-family: 'Roboto';
     font-size: 13px;
-    position: relative;
   }
   .Nom_description:hover .menutext {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100px;
+    width: 50px;
   }
   .prix {
-    position: absolute;
+    display: flex;
+    justify-content: end;
     font-family: 'Roboto';
-    right: 25px;
     font-size: small;
     font-weight: bold;
   }
@@ -719,6 +720,9 @@ head {
 /* Fin menu version Mobile */
 /* Début menu version Tablette */
 @media screen and (min-width: 550px) and (max-width: 768px) {
+  p {
+    margin: 0;
+  }
   .titre {
     font-family: 'Shrikhand';
     padding-left: 20px;
@@ -833,6 +837,9 @@ head {
 /* Fin menu version tablette */
 /* Début menu version PC */
 @media screen and (min-width: 769px) {
+  p {
+    margin: 0;
+  }
   .titre {
     font-family: 'Shrikhand';
     padding-left: 20px;
@@ -902,7 +909,6 @@ head {
     background: white;
     box-shadow: 0 0 10px #d4d4d4;
     justify-content: center;
-    gap: 10%;
   }
   .menutitre {
     gap: 10px;
@@ -955,13 +961,14 @@ head {
 @media screen and (min-width: 375px) and (max-width: 549px) {
   /* Loader du site (index) OhMyFood */
   #floatingBarsG {
-    z-index: 1;
     position: fixed;
     width: 100%;
     height: 100%;
     animation-name: visiblenovisible;
     animation-fill-mode: forwards;
     animation-duration: 3s;
+    background-color: white;
+    z-index: 1;
   }
   @keyframes visiblenovisible {
     0% {
@@ -972,7 +979,7 @@ head {
     }
   }
   .blockG {
-    position: absolute;
+    display: flex;
     background-color: #C4C4C4;
     width: 150vw;
     height: 150vh;
@@ -982,14 +989,14 @@ head {
     animation-iteration-count: infinite;
   }
   #rotateG_01 {
-    left: 0;
-    top: 23px;
+    display: flex;
+    justify-content: center;
     animation-delay: 0.18s;
     transform: rotate(90deg);
   }
   #rotateG_02 {
-    left: 6px;
-    bottom: 6px;
+    display: flex;
+    justify-content: center;
     animation-delay: 0.6s;
     transform: rotate(180deg);
   }
@@ -1035,10 +1042,13 @@ head {
 
 /* Animation Coche Menu */
 .coche {
-  display: flex;
   position: absolute;
   right: 14px;
   border-radius: 0 15px 15px 0;
+}
+
+.coche:hover .fa-check-circle {
+  transform: rotateZ(0);
 }
 
 .fa-check-circle {
@@ -1046,6 +1056,10 @@ head {
   color: transparent;
   width: 50px;
   transform: rotateY(360deg);
+}
+
+.fa-check-circle:hover {
+  transform: rotateZ(360deg);
 }
 
 .Nom_description:hover .fa-check-circle {
@@ -1099,6 +1113,7 @@ head {
     animation-name: visiblenovisible;
     animation-fill-mode: forwards;
     animation-duration: 3s;
+    background-color: white;
   }
   @keyframes visiblenovisible {
     0% {
@@ -1119,14 +1134,10 @@ head {
     animation-iteration-count: infinite;
   }
   #rotateG_01 {
-    left: 0;
-    top: 23px;
     animation-delay: 0.18s;
     transform: rotate(90deg);
   }
   #rotateG_02 {
-    left: 6px;
-    bottom: 6px;
     animation-delay: 0.6s;
     transform: rotate(180deg);
   }
@@ -1172,10 +1183,16 @@ head {
     right: 22px;
     border-radius: 0 15px 15px 0;
   }
+  .coche:hover .fa-check-circle {
+    transform: rotateZ(0);
+  }
   .fa-check-circle {
     border: transparent 1px solid;
     color: transparent;
     width: 50px;
+  }
+  .fa-check-circle:hover {
+    transform: rotateZ(360deg);
   }
   .Nom_description:hover .fa-check-circle {
     display: flex;
@@ -1224,6 +1241,7 @@ head {
     animation-name: visiblenovisible;
     animation-fill-mode: forwards;
     animation-duration: 3s;
+    background-color: white;
   }
   @keyframes visiblenovisible {
     0% {
@@ -1244,14 +1262,10 @@ head {
     animation-iteration-count: infinite;
   }
   #rotateG_01 {
-    left: 0;
-    top: 23px;
     animation-delay: 0.18s;
     transform: rotate(90deg);
   }
   #rotateG_02 {
-    left: 6px;
-    bottom: 6px;
     animation-delay: 0.6s;
     transform: rotate(180deg);
   }
@@ -1295,18 +1309,21 @@ head {
   }
   .coche {
     display: flex;
-    position: absolute;
     right: 40px;
     border-radius: 0 15px 15px 0;
+  }
+  .coche:hover .fa-check-circle {
+    transform: rotateZ(0);
   }
   .fa-check-circle {
     border: transparent 1px solid;
     color: transparent;
     width: 50px;
+  }
+  .fa-check-circle:hover {
     transform: rotate(360deg);
   }
   .Nom_description:hover .fa-check-circle {
-    transform: rotate(0deg);
     display: flex;
     justify-content: center;
     align-items: center;

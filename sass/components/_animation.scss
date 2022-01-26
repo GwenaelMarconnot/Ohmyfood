@@ -2,13 +2,14 @@
 @media screen and (min-width: 375px) and (max-width: 549px){
 /* Loader du site (index) OhMyFood */ 
 #floatingBarsG{
-    z-index: 1;
 	position:fixed;
 	width:100%;
 	height:100%;
     animation-name: visiblenovisible;
     animation-fill-mode: forwards;
     animation-duration: 3s;
+    background-color: white;
+    z-index: 1;
 }
 @keyframes visiblenovisible{
 0%{
@@ -19,7 +20,7 @@
 }
 }
 .blockG{
-	position:absolute;
+    display: flex;
 	background-color:#C4C4C4;
 	width: 150vw;
 	height:150vh;
@@ -29,14 +30,14 @@
 	animation-iteration-count:infinite;
 }
 #rotateG_01{
-	left:0;
-	top:23px;
+    display: flex;
+    justify-content: center;
 	animation-delay:0.18s;
 	transform:rotate(90deg);
 }
 #rotateG_02{
-	left:6px;
-	bottom:6px;
+    display: flex;
+    justify-content: center;
 	animation-delay:0.6s;
 	transform:rotate(180deg);
 }
@@ -82,17 +83,22 @@
 }
 /* Animation Coche Menu */
     .coche{
-        display: flex;
         position: absolute;
         right: 14px;
         border-radius: 0 15px 15px 0;
 
+}
+    .coche:hover .fa-check-circle{
+    transform: rotateZ(0);
 }
     .fa-check-circle{
         border: transparent 1px solid;
         color: transparent;
         width: 50px;
         transform: rotateY(360deg);
+        &:hover{
+        transform: rotateZ(360deg);
+        }
 }
     .Nom_description:hover .fa-check-circle{
         display: flex;
@@ -144,6 +150,7 @@ animation: fade-in-right-price 0.3s ease-out forwards;
     animation-name: visiblenovisible;
     animation-fill-mode: forwards;
     animation-duration: 3s;
+    background-color: white;
 }
 @keyframes visiblenovisible{
 0%{
@@ -164,14 +171,10 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 	animation-iteration-count:infinite;
 }
 #rotateG_01{
-	left:0;
-	top:23px;
 	animation-delay:0.18s;
 	transform:rotate(90deg);
 }
 #rotateG_02{
-	left:6px;
-	bottom:6px;
 	animation-delay:0.6s;
 	transform:rotate(180deg);
 }
@@ -218,10 +221,17 @@ animation: fade-in-right-price 0.3s ease-out forwards;
         right: 22px;
         border-radius: 0 15px 15px 0;
 }
+    .coche:hover .fa-check-circle{
+    transform: rotateZ(0);
+}
+
     .fa-check-circle{
         border: transparent 1px solid;
         color: transparent;
         width: 50px;
+        &:hover{
+        transform: rotateZ(360deg);
+        }
 }
     .Nom_description:hover .fa-check-circle{
         display: flex;
@@ -269,6 +279,7 @@ animation: fade-in-right-price 0.3s ease-out forwards;
     animation-name: visiblenovisible;
     animation-fill-mode: forwards;
     animation-duration: 3s;
+    background-color: white;
 }
 @keyframes visiblenovisible{
 0%{
@@ -289,14 +300,10 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 	animation-iteration-count:infinite;
 }
 #rotateG_01{
-	left:0;
-	top:23px;
 	animation-delay:0.18s;
 	transform:rotate(90deg);
 }
 #rotateG_02{
-	left:6px;
-	bottom:6px;
 	animation-delay:0.6s;
 	transform:rotate(180deg);
 }
@@ -341,18 +348,21 @@ animation: fade-in-right-price 0.3s ease-out forwards;
     }
     .coche{
         display: flex;
-        position: absolute;
         right: 40px;
         border-radius: 0 15px 15px 0;
+    }
+    .coche:hover .fa-check-circle{
+        transform: rotateZ(0);
     }
     .fa-check-circle{
         border: transparent 1px solid;
         color: transparent;
         width: 50px;
-        transform: rotate(360deg);
+        &:hover{
+            transform: rotate(360deg);
+        }
     }
 .Nom_description:hover .fa-check-circle{
-        transform: rotate(0deg);
         display: flex;
         justify-content: center;
         align-items: center;

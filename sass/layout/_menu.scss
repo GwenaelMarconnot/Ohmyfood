@@ -1,5 +1,8 @@
 /* Menu version Mobile */
 @media screen and (min-width: 375px) and (max-width: 549px){ 
+    p{
+    margin: 0;
+    }
     .titre{
     font-family: 'Shrikhand';
     padding-left: 20px;
@@ -60,7 +63,6 @@
     background: white;
     box-shadow: 0 0 10px #d4d4d4;
     justify-content: center;
-    gap: 10%;
 }
     .menutitre{
     width: 250px;
@@ -78,18 +80,17 @@
     align-content: center;
     font-family: 'Roboto';
     font-size: 13px;
-    position: relative;
 }
     .Nom_description:hover .menutext{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100px;
+    width: 50px;
 }
     .prix{
-    position: absolute;
+    display: flex;
+    justify-content: end;
     font-family: 'Roboto';
-    right: 25px;
     font-size: small;
     font-weight: bold;
 }
@@ -113,6 +114,9 @@
 
 /* Début menu version Tablette */
 @media screen and (min-width: 550px) and (max-width: 768px){ 
+    p{
+        margin: 0;
+    }
     .titre{
     font-family: 'Shrikhand';
     padding-left: 20px;
@@ -227,7 +231,10 @@
 
 /* Début menu version PC */
 @media screen and (min-width: 769px){
-.titre{
+    p{
+        margin: 0;
+    }
+    .titre{
     font-family: 'Shrikhand';
     padding-left: 20px;
     display: flex;
@@ -296,7 +303,6 @@
     background: white;
     box-shadow: 0 0 10px #d4d4d4;
     justify-content: center;
-    gap: 10%;
 }
     .menutitre{
     gap: 10px;
