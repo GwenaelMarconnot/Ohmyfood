@@ -699,6 +699,7 @@ head {
     font-family: 'Roboto';
     font-size: small;
     font-weight: bold;
+    margin-top: -15px;
   }
   .bouton {
     font-weight: 500;
@@ -1042,8 +1043,6 @@ head {
 
 /* Animation Coche Menu */
 .coche {
-  position: absolute;
-  right: 14px;
   border-radius: 0 15px 15px 0;
 }
 
