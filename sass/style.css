@@ -1043,7 +1043,7 @@ head {
   border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: end;
-  width: 150px;
+  width: 100%;
 }
 
 .coche:hover .fa-check-circle {
