@@ -1,5 +1,5 @@
 /* Les paramètres CSS des boutons sur toutes les versions */
-@media screen and (min-width: 375px){
+@media screen and (min-width: 375px) and (max-width: 4500px){
     .retour{
     display: flex;
     align-items: center;

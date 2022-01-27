@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Footer Début version Mobile */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 4500px) {
   footer {
     background-color: #414141;
     height: 50%;
@@ -23,7 +23,7 @@
 
 /* Footer Fin version Mobile  */
 /* Mise en page du logo du header du site OhMyFood version Mobile - Tablette */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 4500px) {
   #logo {
     display: flex;
     flex: 1;
@@ -373,7 +373,7 @@
 
 /* Fin CSS de la page index du site OhMyFood Tablette */
 /* Début de la page index du site OhMyFood PC */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 4500px) {
   .search {
     display: flex;
     flex-direction: column;
@@ -542,7 +542,7 @@
 
 /* Fin CSS de la page index du site OhMyFood PC */
 /* Les paramètres CSS des boutons sur toutes les versions */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 4500px) {
   .retour {
     display: flex;
     align-items: center;
@@ -838,7 +838,7 @@ head {
 
 /* Fin menu version tablette */
 /* Début menu version PC */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 4500px) {
   p {
     margin: 0;
   }
@@ -1231,7 +1231,7 @@ head {
   /* Début animation OhMyFood version PC */
 }
 
-@media screen and (min-width: 550px) and (max-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 550px) and (max-width: 768px) and (min-width: 769px) and (max-width: 4500px) {
   /* Loader du site (index) OhMyFood */
   #floatingBarsG {
     z-index: 1;
