@@ -83,15 +83,16 @@
 }
 /* Animation Coche Menu */
     .coche{
+        position: absolute;
+        right: 8px;  
         border-radius: 0 15px 15px 0;
-        display: flex;
-        justify-content: end;
-        width: 100%;
 }
     .coche:hover .fa-check-circle{
     transform: rotate(0);
 }
     .fa-check-circle{
+        border: transparent 1px solid;
+        color: transparent;
         width: 50px;
 }
     .fa-check-circle:hover{
@@ -211,7 +212,6 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 }  
 }
     .coche{
-        display: flex;
         position: absolute;
         right: 22px;
         border-radius: 0 15px 15px 0;
@@ -264,7 +264,7 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 /* Fin animation OhMyFood version tablette */
 
 /* Début animation OhMyFood version PC */
-@media screen and (min-width: 769px) and (max-width: 1600px){
+@media screen and (min-width: 769px){
 /* Loader du site (index) OhMyFood */ 
 #floatingBarsG{
     z-index: 1;
@@ -342,7 +342,7 @@ animation: fade-in-right-price 0.3s ease-out forwards;
     }  
     }
     .coche{
-        display: flex;
+        position: absolute;
         right: 40px;
         border-radius: 0 15px 15px 0;
     }
