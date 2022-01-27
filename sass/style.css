@@ -655,7 +655,6 @@ head {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
-    background-color: white;
     margin-left: 10px;
   }
   .Nom_description {
@@ -774,7 +773,6 @@ head {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
-    background-color: white;
     margin-left: 10px;
   }
   .Nom_description {
@@ -897,7 +895,6 @@ head {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
-    background-color: white;
     margin-left: 10px;
   }
   .Nom_description {
@@ -1043,28 +1040,22 @@ head {
 
 /* Animation Coche Menu */
 .coche {
-  position: absolute;
-  right: 14px;
   border-radius: 0 15px 15px 0;
-}
-
-.fa-check-circle {
-  transform: rotate(360deg);
+  display: flex;
+  justify-content: end;
+  width: 150px;
 }
 
 .coche:hover .fa-check-circle {
-  transform: rotateZ(0);
+  transform: rotate(0);
 }
 
 .fa-check-circle {
-  border: transparent 1px solid;
-  color: transparent;
   width: 50px;
-  transform: rotateY(360deg);
 }
 
 .fa-check-circle:hover {
-  transform: rotateZ(360deg);
+  transform: rotate(360deg);
 }
 
 .Nom_description:hover .fa-check-circle {
@@ -1078,7 +1069,6 @@ head {
   font-size: 25px;
   border-radius: 0 15px 15px 0;
   animation: fade-in-right 0.3s ease-out forwards;
-  transform: rotateZ(360deg);
 }
 
 @keyframes fade-in-right {
