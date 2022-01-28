@@ -1027,7 +1027,7 @@ head {
     transition: color 1s ease-out;
     font-weight: bold;
   }
-  .Menu_restaurant {
+  .Menu_restaurants {
     animation: fade-in-top 1s;
   }
   @keyframes fade-in-top {
@@ -1051,8 +1051,9 @@ head {
     border: transparent 1px solid;
     color: transparent;
     width: 50px;
-    transform: rotate(60deg);
-    transition: transform 1s ease-out;
+  }
+  .Menu_restaurant:hover {
+    animation: fade-in-right 0.3s ease-out forwards;
   }
   .Nom_description:hover .fa-check-circle {
     display: flex;
@@ -1064,7 +1065,8 @@ head {
     font-weight: bold;
     font-size: 25px;
     border-radius: 0 15px 15px 0;
-    animation: fade-in-right 0.3s ease-out forwards;
+    transform: rotate(60deg);
+    transition: transform 1s ease-out;
   }
   @keyframes fade-in-right {
     0% {
