@@ -39,6 +39,7 @@
     .fonctionnement{
         display: flex;
         margin-left: 5px;
+        padding-bottom: 20px;
 }
     .fonctionnement_choix{
         display: flex;
@@ -87,7 +88,6 @@
     /* Main de la page */ 
     .section0{
         display: flex;
-        padding-top: 40px;
         background: white;
         justify-content: center;
 }
@@ -104,8 +104,9 @@
         padding-right: 10px;
 }
     .titre_restaurant{
-        align-self: flex-start;
-        padding-left: 10px;
+        font-family: 'Shrikhand';
+        padding-left: 20px;
+        padding-top: 20px;
 }
     .cardsrestaurants{
         gap: 20px;
@@ -120,14 +121,10 @@
         border-radius: 20px;
         display: flex;
         flex-direction:column; 
+        position: relative;
         background-color: white;
         box-shadow:2px 2px 8px #CCCCCC;
         justify-content: center;
-}
-    .imgRestaurant{
-        height: 100%;
-        width: 100%;
-        display:flex;
 }
     .imgRestaurant img{
         width: 100%;
@@ -146,20 +143,18 @@
         font-weight: bold;
         font-size: 18px;
         position: absolute;
-        margin: 15px;
+        top: 10px;
+        right: 5px;
+        margin: 5px;
 }
     .imgRestaurant a{
         width: 100%;
 }
     .detailRestaurant{
-        display:flex;
         position: relative;
-        flex-direction: column;
         border-radius: 20px 20px 20px 20px;
         padding: 5px;
         border: 5px solid #FFFFFF;
-        background: white;
-        justify-content: center;
         gap: 10%;
         margin-left: 5px;
         }
@@ -206,6 +201,7 @@
         display: flex;
         margin-left: 5px;
         justify-content: center;
+        padding-bottom: 20px;
     }
     .fonctionnement_choix{
         display: flex;
@@ -254,7 +250,6 @@
         /* Main de la page */ 
     .section0{
         display: flex;
-        padding-top: 40px;
         background: white;
         justify-content: center;
     }
@@ -271,8 +266,9 @@
         padding-right: 10px;
     }
     .titre_restaurant{
-       align-self: flex-start;
-       padding-left: 10px;
+        font-family: 'Shrikhand';
+        padding-left: 20px;
+        padding-top: 20px;
     }
     .cardsrestaurants{
         gap: 20px;
@@ -286,15 +282,11 @@
         width: 100%;
         border-radius: 20px;
         display: flex;
+        position: relative;
         flex-direction:column; 
         background-color: white;
         box-shadow:2px 2px 8px #CCCCCC;
         justify-content: center;
-    }
-    .imgRestaurant{
-        height: 100%;
-        width: 100%;
-        display:flex;
     }
     .imgRestaurant img{
         width: 100%;
@@ -313,20 +305,18 @@
         font-weight: bold;
         font-size: 18px;
         position: absolute;
-        margin: 15px;
+        top: 10px;
+        right: 5px;
+        margin: 5px;
     }
     .imgRestaurant a{
         width: 100%;
     }
     .detailRestaurant{
-        display:flex;
         position: relative;
-        flex-direction: column;
         border-radius: 20px 20px 20px 20px;
         padding: 5px;
         border: 5px solid #FFFFFF;
-        background: white;
-        justify-content: center;
         gap: 10%;
         margin-left: 5px;
     }
@@ -374,6 +364,7 @@
         display: flex;
         margin-left: 5px;
         justify-content: center;
+        padding-bottom: 20px;
     }
     .fonctionnement_choix{
         display: flex;
@@ -436,7 +427,6 @@
         /* Main de la page */ 
     .section0{
         display: flex;
-        padding-top: 40px;
         background: white;
         justify-content: center;
     }
@@ -446,38 +436,30 @@
         height: 50%;
         border: #F2F2F2 5px solid;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding-bottom: 50px;
         gap: 10px;
         padding-left: 10px;
         padding-right: 10px;
     }
     .titre_restaurant{
-       align-self: flex-start;
-       padding-left: 10px;
+       padding-left: 20px;
+       font-family: 'Shrikhand';
+       padding-top: 20px;
     }
     .cardsrestaurants{
         gap: 20px;
         display: flex;
         width: 100%;
-        height: 100%;
         flex-direction:column;
-        align-items: center;
     }
     .cardrestaurant{
-        width: 100%;
         border-radius: 20px;
+        position: relative;
         display: flex;
         flex-direction:column; 
         background-color: white;
         box-shadow:2px 2px 8px #CCCCCC;
-        justify-content: center;
-    }
-    .imgRestaurant{
-        height: 100%;
-        width: 100%;
-        display:flex;
-        justify-content: right;
     }
     .imgRestaurant img{
         width: 100%;
@@ -495,20 +477,18 @@
         font-weight: bold;
         font-size: 18px;
         position:absolute;
-        margin: 15px;
+        top: 10px;
+        right: 5px;
+        margin: 10px;
     }
     .imgRestaurant a{
         width: 100%;
     }
     .detailRestaurant{
-        display:flex;
         position: relative;
-        flex-direction: column;
         border-radius: 20px 20px 20px 20px;
         padding: 5px;
         border: 5px solid #FFFFFF;
-        background: white;
-        justify-content: center;
         gap: 10%;
         margin-left: 5px;
     }

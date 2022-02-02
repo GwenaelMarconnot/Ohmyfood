@@ -77,7 +77,6 @@
     position: absolute;
     right: 8px;  
     border-radius: 0 15px 15px 0;
-    color: white;
 }
     .fa-check-circle{
     border: transparent 1px solid;
@@ -87,8 +86,16 @@
 
     .Nom_description:hover .coche{
     background-color: #99E2D0;
-
+    animation: fade-in-right 0.3s ease-out forwards;
   }
+  @keyframes fade-in-right {
+  0%{
+  transform: translateX(50px);
+}
+  100%{
+  transform: translateX(0px);
+  }
+}
     .Nom_description:hover .fa-check-circle{
     display: flex;
     justify-content: center;
@@ -99,15 +106,13 @@
     font-weight: bold;
     font-size: 25px;
     border-radius: 0 15px 15px 0;
-    animation: fade-in-right 0.5s ease-out forwards;
+    animation: fade-in-rotate 1s ease-out forwards;
 }
-@keyframes fade-in-right {
+@keyframes fade-in-rotate {
     0% {
-    transform: translateX(50px);
     transform: rotate(180deg);
     }
     100% {
-    transform: translateX(0px);
     transform: rotate(360deg);
     }
 }
@@ -115,7 +120,7 @@
 
 /* Décalage prix coche */ 
 .Nom_description:hover .prix{
-animation: fade-in-right-price 0.3s ease-out forwards;
+animation: fade-in-right-price 0.5s ease-out forwards;
 }
 @keyframes fade-in-right-price{
     0% {
@@ -204,17 +209,25 @@ animation: fade-in-right-price 0.3s ease-out forwards;
         position: absolute;
         right: 15px;
         border-radius: 0 15px 15px 0;
-        color: white;
 }
     .fa-check-circle{
         border: transparent 1px solid;
         color: transparent;
         width: 50px;
-        }
+    }
 
     .Nom_description:hover .coche{
     background-color: #99E2D0;
+    animation: fade-in-right 0.3s ease-out forwards;
   }
+  @keyframes fade-in-right {
+    0%{
+    transform: translateX(50px);
+  }
+    100%{
+    transform: translateX(0px);
+    }
+}
     .Nom_description:hover .fa-check-circle{
         display: flex;
         justify-content: center;
@@ -225,15 +238,13 @@ animation: fade-in-right-price 0.3s ease-out forwards;
         font-weight: bold;
         font-size: 25px;
         border-radius: 0 15px 15px 0;
-        animation: fade-in-right 0.3s ease-out forwards;
+        animation: fade-in-rotate 1s ease-out forwards;
     }
-    @keyframes fade-in-right {
+    @keyframes fade-in-rotate {
         0% {
-            transform: translateX(50px);
             transform: rotate(180deg);
         }
         100% {
-            transform: translateX(0px);
             transform: rotate(360deg);
         }  
 }
@@ -275,7 +286,6 @@ animation: fade-in-right-price 0.3s ease-out forwards;
     }
     100%{
         opacity: 0;
-        background-color: none;
     }
 }
   .rond {
@@ -331,11 +341,18 @@ animation: fade-in-right-price 0.3s ease-out forwards;
         position: absolute;
         margin-left: 363px;
         border-radius: 0 15px 15px 0;
-        color: white;
     }
     .Nom_description:hover .coche{
         background-color: #99E2D0;
-    
+        animation: fade-in-right 0.3s ease-out forwards;
+      }
+@keyframes fade-in-right {
+        0%{
+        transform: translateX(50px);
+      }
+        100%{
+        transform: translateX(0px);
+        }
       }
     .fa-check-circle{
         border: transparent 1px solid;
@@ -352,15 +369,13 @@ animation: fade-in-right-price 0.3s ease-out forwards;
         font-weight: bold;
         font-size: 25px;
         border-radius: 0 15px 15px 0;
-        animation: fade-in-right 0.3s ease-out forwards;
+        animation: fade-in-rotate 1s ease-out forwards;
         }
-        @keyframes fade-in-right {
+        @keyframes fade-in-rotate {
             0% {
-                transform: translateX(50px);
                 transform: rotate(180deg);
             }
             100% {
-                transform: translateX(0px);
                 transform: rotate(360deg);
             }  
 }
