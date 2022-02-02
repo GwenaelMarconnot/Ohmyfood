@@ -1,54 +1,46 @@
 /* Début animation OhMyFood version Mobile */
 @media screen and (min-width: 375px) and (max-width: 549px){
 /* Loader du site (index) OhMyFood */ 
-#floatingBarsG{
-	position:fixed;
-	width:100%;
-	height:100%;
-    animation-name: visiblenovisible;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
-    background-color: white;
-    z-index: 1;
-}
-@keyframes visiblenovisible{
-0%{
-    opacity: 1;
-} 
-100%{
-    opacity: 0;
-}
-}
-.blockG{
+.wrapper {
+    position: fixed;
     display: flex;
-	background-color:#C4C4C4;
-	width: 150vw;
-	height:150vh;
-	border-radius:7px 7px 0 0;
-	animation-name:fadeG;
-	animation-duration:0.48s;
-	animation-iteration-count:infinite;
-}
-#rotateG_01{
-    display: flex;
+    width: 100%;
+    align-content: center;
+    gap: 20px;
+    padding-top: 235px;
     justify-content: center;
-	animation-delay:0.18s;
-	transform:rotate(90deg);
+    animation: loaderR 3s ease-in-out forwards;
+  }
+  @keyframes loaderR {
+    0%{
+        opacity: 1;
+        z-index: 1000;
+        height: 100vh;
+        background-color: white;
+    }
+    100%{
+        opacity: 0;
+        background-color: none;
+    }
 }
-#rotateG_02{
-    display: flex;
-    justify-content: center;
-	animation-delay:0.6s;
-	transform:rotate(180deg);
-}
-@keyframes fadeG{
-	0%{
-		background-color:#000000;
-	}
-	100%{
-		background-color:#C4C4C4;
-	}
-}
+  .rond {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: bounce 3s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-45px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 /* Fin Loader du site (index) OhMyFood */
 
 /* Bouton coeur menu */
@@ -85,15 +77,18 @@
     position: absolute;
     right: 8px;  
     border-radius: 0 15px 15px 0;
+    color: white;
 }
     .fa-check-circle{
     border: transparent 1px solid;
     color: transparent;
     width: 50px;
-    transform: rotate(60deg);
-    transition: transform 1s ease-out;
 }
 
+    .Nom_description:hover .coche{
+    background-color: #99E2D0;
+
+  }
     .Nom_description:hover .fa-check-circle{
     display: flex;
     justify-content: center;
@@ -104,16 +99,16 @@
     font-weight: bold;
     font-size: 25px;
     border-radius: 0 15px 15px 0;
-    animation: fade-in-right 0.3s ease-out forwards;
+    animation: fade-in-right 0.5s ease-out forwards;
 }
 @keyframes fade-in-right {
     0% {
-    background-color: #ffff;
     transform: translateX(50px);
+    transform: rotate(180deg);
     }
     100% {
-    background-color: #99E2D0;
     transform: translateX(0px);
+    transform: rotate(360deg);
     }
 }
 /* Fin animation Coche Menu */
@@ -135,53 +130,47 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 }
 /* Début animation OhMyFood version Tablette */
 @media screen and (min-width: 550px) and (max-width: 768px){
-
-
 /* Loader du site (index) OhMyFood */ 
-#floatingBarsG{
-    z-index: 1;
-	position:fixed;
-	width:100%;
-	height:100%;
-    animation-name: visiblenovisible;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
-    background-color: white;
+.wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    gap: 20px;
+    padding-top: 135px;
+    justify-content: center;
+    animation: loaderR 3s ease-in-out forwards;
+  }
+  @keyframes loaderR {
+    0%{
+        opacity: 1;
+        z-index: 1000;
+        height: 100vh;
+        background-color: white;
+    }
+    100%{
+        opacity: 0;
+        background-color: none;
+    }
 }
-@keyframes visiblenovisible{
-0%{
-    opacity: 1;
-} 
-100%{
-    opacity: 0;
-}
-}
-.blockG{
-	position:absolute;
-	background-color:#C4C4C4;
-	width: 150vw;
-	height:150vh;
-	border-radius:7px 7px 0 0;
-	animation-name:fadeG;
-	animation-duration:0.48s;
-	animation-iteration-count:infinite;
-}
-#rotateG_01{
-	animation-delay:0.18s;
-	transform:rotate(90deg);
-}
-#rotateG_02{
-	animation-delay:0.6s;
-	transform:rotate(180deg);
-}
-@keyframes fadeG{
-	0%{
-		background-color:#000000;
-	}
-	100%{
-		background-color:#C4C4C4;
-	}
-}
+  .rond {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: bounce 3s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-45px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 /* Fin Loader du site (index) OhMyFood */
 
 /* Bouton coeur menu */
@@ -215,19 +204,17 @@ animation: fade-in-right-price 0.3s ease-out forwards;
         position: absolute;
         right: 15px;
         border-radius: 0 15px 15px 0;
+        color: white;
 }
-    .coche:hover .fa-check-circle{
-    transform: rotate(0);
-}
-
     .fa-check-circle{
         border: transparent 1px solid;
         color: transparent;
         width: 50px;
-        &:hover{
-        transform: rotate(360deg);
         }
-}
+
+    .Nom_description:hover .coche{
+    background-color: #99E2D0;
+  }
     .Nom_description:hover .fa-check-circle{
         display: flex;
         justify-content: center;
@@ -242,21 +229,23 @@ animation: fade-in-right-price 0.3s ease-out forwards;
     }
     @keyframes fade-in-right {
         0% {
-            background-color: #ffff;
+            transform: translateX(50px);
+            transform: rotate(180deg);
         }
         100% {
-            background-color: #99E2D0;
+            transform: translateX(0px);
+            transform: rotate(360deg);
         }  
 }
 /* Décalage prix coche */
 .Nom_description:hover .prix{
-    animation: fade-in-right-price 0.3s ease-out forwards;
+    animation: fade-in-right-price 0.5s ease-out forwards;
     }
     @keyframes fade-in-right-price{
         0% {
             transform: translateX(0px);
             }
-            100% {
+        100% {
             transform: translateX(-50px);
             }
     }
@@ -267,50 +256,46 @@ animation: fade-in-right-price 0.3s ease-out forwards;
 @media screen and (min-width: 769px) and (max-width: 4500px){
 
 /* Loader du site (index) OhMyFood */ 
-#floatingBarsG{
-    z-index: 1;
-	position:fixed;
-	width:100%;
-	height:100%;
-    animation-name: visiblenovisible;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
-    background-color: white;
+.wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    gap: 20px;
+    right: 20px;
+    justify-content: center;
+    animation: loaderR 3s ease-in-out forwards;
+  }
+  @keyframes loaderR {
+    0%{
+        opacity: 1;
+        z-index: 1000;
+        height: 100vh;
+        background-color: white;
+    }
+    100%{
+        opacity: 0;
+        background-color: none;
+    }
 }
-@keyframes visiblenovisible{
-0%{
-    opacity: 1;
-} 
-100%{
-    opacity: 0;
-}
-}
-.blockG{
-	position:absolute;
-	background-color:#C4C4C4;
-	width: 100%;
-	height:100%;
-	border-radius:7px 7px 0 0;
-	animation-name:fadeG;
-	animation-duration:0.48s;
-	animation-iteration-count:infinite;
-}
-#rotateG_01{
-	animation-delay:0.18s;
-	transform:rotate(90deg);
-}
-#rotateG_02{
-	animation-delay:0.6s;
-	transform:rotate(180deg);
-}
-@keyframes fadeG{
-	0%{
-		background-color:#000000;
-	}
-	100%{
-		background-color:#C4C4C4;
-	}
-}
+  .rond {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: bounce 3s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-45px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 /* Fin Loader du site (index) OhMyFood */
 
 /* Bouton coeur menu */
@@ -344,9 +329,14 @@ animation: fade-in-right-price 0.3s ease-out forwards;
     }
     .coche{
         position: absolute;
-        right: 40px;
+        margin-left: 363px;
         border-radius: 0 15px 15px 0;
+        color: white;
     }
+    .Nom_description:hover .coche{
+        background-color: #99E2D0;
+    
+      }
     .fa-check-circle{
         border: transparent 1px solid;
         color: transparent;
@@ -366,10 +356,12 @@ animation: fade-in-right-price 0.3s ease-out forwards;
         }
         @keyframes fade-in-right {
             0% {
-                background-color: #ffff;
+                transform: translateX(50px);
+                transform: rotate(180deg);
             }
             100% {
-                background-color: #99E2D0;
+                transform: translateX(0px);
+                transform: rotate(360deg);
             }  
 }
 /* Décalage prix coche */

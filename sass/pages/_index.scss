@@ -79,10 +79,10 @@
 }
     .texte_description:hover{
         box-shadow: rgb(170, 170, 170) 5px 5px 10px;
-        background-color: #eddefcb8;
+        background-color: #ede3fa;
 }
     #icon_texte:hover{
-        background-color: #eddefcb8;
+        background-color: #9356DC;
     }
     /* Main de la page */ 
     .section0{
@@ -246,10 +246,10 @@
     }
     .texte_description:hover{
         box-shadow: rgb(170, 170, 170) 5px 5px 10px;
-        background-color: #eddefcb8;
+        background-color: #ede3fa;
     }
     #icon_texte:hover{
-        background-color: #eddefcb8;
+        background-color: #9356DC;
         }
         /* Main de la page */ 
     .section0{
@@ -388,6 +388,20 @@
         justify-content: center;
         align-items: center;
     }
+    .choix:hover{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 320px;
+        border-radius: 20px;
+        background-color: #f6f6f6;
+        align-items: center;
+        gap: 30px;
+        box-shadow: #e7e7e7 5px 5px 10px;
+        font-weight: bold;
+        margin: 5px;
+        margin-left: 20px;
+    }
     .choix{
         align-items: center;
         border: #9356DC 3px solid;
@@ -414,10 +428,10 @@
     }
     .texte_description:hover{
         box-shadow: rgb(170, 170, 170) 5px 5px 10px;
-        background-color: #eddefcb8;
+        background-color: #ede3fa;
     }
     #icon_texte:hover{
-        background-color: #eddefcb8;
+        background-color: #9356DC;
         }
         /* Main de la page */ 
     .section0{
@@ -463,6 +477,7 @@
         height: 100%;
         width: 100%;
         display:flex;
+        justify-content: right;
     }
     .imgRestaurant img{
         width: 100%;
@@ -472,8 +487,6 @@
         border-radius: 20px 20px 20px 20px;
     }
     .imgRestaurant .Nouveau{
-        align-self: flex-start;
-        right: 550px;
         display: flex;
         background-color: #99E2D0;
         padding: 10px 20px 10px 20px;
