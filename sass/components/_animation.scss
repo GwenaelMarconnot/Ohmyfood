@@ -77,17 +77,25 @@
     right: 8px;  
     border-radius: 0 15px 15px 0;
 }
+  .croix{
+    position: absolute;
+    right: 8px;
+    border-radius: 0 15px 15px 0;
+}
     .fa-check-circle{
     border: transparent 1px solid;
     color: transparent;
     width: 50px;
 }
-
-    .Nom_description:hover .coche{
+    .Nom_description:hover .croix{
     background-color: #99E2D0;
     animation: fade-in-right 0.3s ease-out forwards;
-  }
-  @keyframes fade-in-right {
+}
+    .Nom_description:hover .coche{
+      background-color: #99E2D0;
+      animation: fade-in-right 0.3s ease-out forwards;
+}
+@keyframes fade-in-right {
   0%{
   transform: translateX(50px);
 }
@@ -208,12 +216,20 @@ animation: fade-in-right-price 0.5s ease-out forwards;
         right: 15px;
         border-radius: 0 15px 15px 0;
 }
+    .croix{
+      position: absolute;
+      right: 22px;
+      border-radius: 0 15px 15px 0;
+    }
     .fa-check-circle{
         border: transparent 1px solid;
         color: transparent;
         width: 50px;
     }
-
+    .Nom_description:hover .croix{
+      background-color: #99E2D0;
+      animation: fade-in-right 0.3s ease-out forwards;
+    }
     .Nom_description:hover .coche{
     background-color: #99E2D0;
     animation: fade-in-right 0.3s ease-out forwards;
@@ -339,6 +355,15 @@ animation: fade-in-right-price 0.5s ease-out forwards;
         position: absolute;
         margin-left: 363px;
         border-radius: 0 15px 15px 0;
+    }
+    .croix{
+        position: absolute;
+        margin-left: 252px;
+        border-radius: 0 15px 15px 0;
+      }
+    .Nom_description:hover .croix{
+        background-color: #99E2D0;
+        animation: fade-in-right 0.3s ease-out forwards;
     }
     .Nom_description:hover .coche{
         background-color: #99E2D0;
