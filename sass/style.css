@@ -675,7 +675,6 @@ head {
     width: 100px;
   }
   .menutext {
-    align-content: center;
     font-family: 'Roboto';
     font-size: 13px;
   }
@@ -683,7 +682,7 @@ head {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 50px;
+    width: 40px;
   }
   .prix {
     display: flex;
@@ -796,7 +795,6 @@ head {
     width: 100px;
   }
   .menutext {
-    align-content: center;
     font-family: 'Roboto';
     font-size: 13px;
   }
@@ -804,7 +802,7 @@ head {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100px;
+    width: 40px;
   }
   .prix {
     position: absolute;
@@ -925,7 +923,7 @@ head {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100px;
+    width: 40px;
   }
   .prix {
     display: flex;

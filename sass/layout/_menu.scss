@@ -75,7 +75,6 @@
     width: 100px;
 }
     .menutext{
-    align-content: center;
     font-family: 'Roboto';
     font-size: 13px;
 }
@@ -83,7 +82,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 50px;
+    width: 40px;
 }
     .prix{
     display: flex;
@@ -196,7 +195,6 @@
     width: 100px;
 }
     .menutext{
-    align-content: center;
     font-family: 'Roboto';
     font-size: 13px;
 }
@@ -204,7 +202,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100px;
+    width: 40px;
 }
     .prix{
     position: absolute;
@@ -325,7 +323,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100px;
+    width: 40px;
 }
     .prix{
     display: flex;
