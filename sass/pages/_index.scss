@@ -1,5 +1,4 @@
 /* CSS de la page index du site OhMyFood Mobile */
-@media screen and (min-width: 375px) and (max-width: 549px){ 
 /* Recherche  */ 
 .search{
         display: flex;
@@ -64,6 +63,15 @@
         width: 18px;
         margin-left: -10px;
 }
+.texte_description:hover  .fa-store{
+        color: #9356DC;
+}
+.texte_description:hover .fa-list-ul{
+        color: #9356DC;
+}
+.texte_description:hover .fa-mobile-alt{
+        color: #9356DC;
+}
     .texte_description{
         display: flex;
         flex-direction: row;
@@ -82,9 +90,6 @@
         box-shadow: rgb(170, 170, 170) 5px 5px 10px;
         background-color: #ede3fa;
 }
-    #icon_texte:hover{
-        background-color: #9356DC;
-    }
     /* Main de la page */ 
     .section0{
         display: flex;
@@ -158,7 +163,6 @@
         gap: 10%;
         margin-left: 5px;
         }
-}
 /* Fin CSS de la page index du site OhMyFood Mobile */
 /* Début de la page index du site OhMyFood Tablette */
 @media screen and (min-width: 550px) and (max-width: 768px){ 

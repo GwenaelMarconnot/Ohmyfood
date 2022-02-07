@@ -1,6 +1,28 @@
 @charset "UTF-8";
-/* Footer Début version Mobile */
-@media screen and (min-width: 375px) and (max-width: 4500px) {
+/* Footer version Mobile */
+footer {
+  background-color: #414141;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.itemfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Titre {
+  gap: 10px;
+  color: white;
+}
+
+/* Footer Version Tablette - PC */
+@media screen and (min-width: 550px) and (max-width: 4500px) {
   footer {
     background-color: #414141;
     height: 50%;
@@ -21,9 +43,20 @@
   }
 }
 
-/* Footer Fin version Mobile  */
-/* Mise en page du logo du header du site OhMyFood version Mobile - Tablette */
-@media screen and (min-width: 375px) and (max-width: 4500px) {
+/* Footer Version Tablette - PC  */
+/* Mise en place logo en version Mobile */
+#logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Shrikhand';
+}
+
+/* Mise en page du logo du header du site OhMyFood version Tablette - PC */
+@media screen and (min-width: 550px) and (max-width: 4500px) {
   #logo {
     display: flex;
     flex: 1;
@@ -37,165 +70,191 @@
 
 /* Fin logo du site Mobile - Tablette - PC */
 /* CSS de la page index du site OhMyFood Mobile */
-@media screen and (min-width: 375px) and (max-width: 549px) {
-  /* Recherche  */
-  .search {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .search_restaurant {
-    padding-top: 20px;
-    text-align: center;
-    width: 100%;
-    height: 270px;
-    border: none;
-    background: #F2F2F2;
-    align-items: center;
-    font-family: 'Roboto';
-  }
-  .input-recherche {
-    height: 50px;
-    border: none;
-    background: #e2e2e2;
-    width: 100%;
-    text-align: center;
-  }
-  .input-localisation {
-    background-color: #e2e2e2;
-    border: none;
-    padding-top: 20px;
-    padding-left: 10px;
-    font-weight: bold;
-  }
-  /* Corps de la page */
-  .titre {
-    padding-left: 10px;
-    margin-top: auto;
-    font-family: 'Shrikhand';
-  }
-  .fonctionnement {
-    display: flex;
-    margin-left: 5px;
-    padding-bottom: 20px;
-  }
-  .fonctionnement_choix {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-  }
-  .fonctionnement_menu {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .choix {
-    align-items: center;
-    border: #9356DC 3px solid;
-    color: white;
-    background: #9356DC;
-    border-radius: 20px;
-    height: 18px;
-    width: 18px;
-    margin-left: -10px;
-  }
-  .texte_description {
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    width: 320px;
-    border-radius: 20px;
-    background-color: #f6f6f6;
-    align-items: center;
-    gap: 30px;
-    box-shadow: #e7e7e7 5px 5px 10px;
-    font-weight: bold;
-    margin: 5px;
-    margin-left: 20px;
-  }
-  .texte_description:hover {
-    box-shadow: #aaaaaa 5px 5px 10px;
-    background-color: #ede3fa;
-  }
-  #icon_texte:hover {
-    background-color: #9356DC;
-  }
-  /* Main de la page */
-  .section0 {
-    display: flex;
-    background: white;
-    justify-content: center;
-  }
-  #restaurant {
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 50%;
-    border: #F2F2F2 5px solid;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .titre_restaurant {
-    font-family: 'Shrikhand';
-    padding-left: 20px;
-    padding-top: 20px;
-  }
-  .cardsrestaurants {
-    gap: 20px;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .cardrestaurant {
-    width: 100%;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: white;
-    box-shadow: 2px 2px 8px #CCCCCC;
-    justify-content: center;
-  }
-  .imgRestaurant img {
-    width: 100%;
-    height: 215px;
-    object-fit: cover;
-    display: flex;
-    border-radius: 20px 20px 20px 20px;
-  }
-  .imgRestaurant .Nouveau {
-    align-self: flex-start;
-    right: 20px;
-    background-color: #99E2D0;
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
-    color: #5f867c;
-    font-weight: bold;
-    font-size: 18px;
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    margin: 5px;
-  }
-  .imgRestaurant a {
-    width: 100%;
-  }
-  .detailRestaurant {
-    position: relative;
-    border-radius: 20px 20px 20px 20px;
-    padding: 5px;
-    border: 5px solid #FFFFFF;
-    gap: 10%;
-    margin-left: 5px;
-  }
+/* Recherche  */
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search_restaurant {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 270px;
+  border: none;
+  background: #F2F2F2;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.input-recherche {
+  height: 50px;
+  border: none;
+  background: #e2e2e2;
+  width: 100%;
+  text-align: center;
+}
+
+.input-localisation {
+  background-color: #e2e2e2;
+  border: none;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+/* Corps de la page */
+.titre {
+  padding-left: 10px;
+  margin-top: auto;
+  font-family: 'Shrikhand';
+}
+
+.fonctionnement {
+  display: flex;
+  margin-left: 5px;
+  padding-bottom: 20px;
+}
+
+.fonctionnement_choix {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.fonctionnement_menu {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.choix {
+  align-items: center;
+  border: #9356DC 3px solid;
+  color: white;
+  background: #9356DC;
+  border-radius: 20px;
+  height: 18px;
+  width: 18px;
+  margin-left: -10px;
+}
+
+.texte_description:hover .fa-store {
+  color: #9356DC;
+}
+
+.texte_description:hover .fa-list-ul {
+  color: #9356DC;
+}
+
+.texte_description:hover .fa-mobile-alt {
+  color: #9356DC;
+}
+
+.texte_description {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 320px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  align-items: center;
+  gap: 30px;
+  box-shadow: #e7e7e7 5px 5px 10px;
+  font-weight: bold;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.texte_description:hover {
+  box-shadow: #aaaaaa 5px 5px 10px;
+  background-color: #ede3fa;
+}
+
+/* Main de la page */
+.section0 {
+  display: flex;
+  background: white;
+  justify-content: center;
+}
+
+#restaurant {
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 50%;
+  border: #F2F2F2 5px solid;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titre_restaurant {
+  font-family: 'Shrikhand';
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.cardsrestaurants {
+  gap: 20px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardrestaurant {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  box-shadow: 2px 2px 8px #CCCCCC;
+  justify-content: center;
+}
+
+.imgRestaurant img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  display: flex;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.imgRestaurant .Nouveau {
+  align-self: flex-start;
+  right: 20px;
+  background-color: #99E2D0;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  color: #5f867c;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  margin: 5px;
+}
+
+.imgRestaurant a {
+  width: 100%;
+}
+
+.detailRestaurant {
+  position: relative;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px;
+  border: 5px solid #FFFFFF;
+  gap: 10%;
+  margin-left: 5px;
 }
 
 /* Fin CSS de la page index du site OhMyFood Mobile */
@@ -534,8 +593,58 @@
 }
 
 /* Fin CSS de la page index du site OhMyFood PC */
-/* Les paramètres CSS des boutons sur toutes les versions */
-@media screen and (min-width: 375px) and (max-width: 4500px) {
+/* Paramètres CSS Mobile */
+.retour {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+
+.bouton_explorer {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  border-radius: 100px;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  color: white;
+  box-shadow: #a5a5a5 0 5px 10px;
+  font-family: "Roboto";
+}
+
+.bouton_explorer:hover {
+  background: linear-gradient(to left top, #c08aff, #fb97df);
+  color: white;
+  box-shadow: lightsteelblue 5px 5px 5px 5px;
+}
+
+.bouton_commander {
+  font-weight: 500;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  margin: auto;
+  padding: 15px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 100px;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  color: white;
+  box-shadow: 0 0 10px #d4d4d4;
+  font-family: "Roboto";
+}
+
+.bouton_commander:hover {
+  background: linear-gradient(to left top, #c08aff, #fb97df);
+  color: white;
+  box-shadow: 5px 5px  5px 5px lightsteelblue;
+}
+
+@media screen and (min-width: 550px) and (max-width: 4500px) {
   .retour {
     display: flex;
     align-items: center;
@@ -599,115 +708,129 @@ head {
 }
 
 /* Menu version Mobile */
-@media screen and (min-width: 375px) and (max-width: 549px) {
-  p {
-    margin: 0;
-  }
-  .titre {
-    font-family: 'Shrikhand';
-    padding-left: 20px;
-  }
-  .sous_titre {
-    font-family: "Roboto";
-    padding-top: 20px;
-    padding-left: 10px;
-  }
-  .ligne_titre {
-    border: 1px solid #99E2D0;
-    width: 40px;
-    margin-left: 10px;
-  }
-  .image_restaurant {
-    height: 215px;
-  }
-  .image_restaurant img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  main {
-    background-color: #F2F2F2;
-  }
-  .main_menu {
-    display: flex;
-    background-color: #F2F2F2;
-    border-radius: 30px 30px 0 0;
-    flex-direction: column;
-    position: relative;
-    padding-bottom: 20px;
-    top: -26px;
-  }
-  .Menu_restaurants {
-    gap: 5px;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-  }
-  .Menu_restaurant {
-    width: 95%;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-left: 10px;
-  }
-  .Nom_description {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px 20px 20px 20px;
-    padding: 5px;
-    padding-left: 10px;
-    border: 5px solid #FFFFFF;
-    background: white;
-    box-shadow: 0 0 10px #d4d4d4;
-    justify-content: center;
-  }
-  .menutitre {
-    width: 250px;
-    gap: 10px;
-    font-weight: bold;
-    font-family: 'Roboto';
-  }
-  .Nom_description:hover .menutitre {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100px;
-  }
-  .menutext {
-    font-family: 'Roboto';
-    font-size: 13px;
-  }
-  .Nom_description:hover .menutext {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 40px;
-  }
-  .prix {
-    display: flex;
-    justify-content: end;
-    margin-right: 10px;
-    margin-top: -15px;
-    font-family: 'Roboto';
-    font-size: small;
-    font-weight: bold;
-  }
-  .bouton {
-    font-weight: 500;
-    display: flex;
-    width: 200px;
-    justify-content: center;
-    margin: auto;
-    padding: 15px;
-    margin-top: 15px;
-    border: 1px solid transparent;
-    border-radius: 100px;
-    background: linear-gradient(to left top, #9356DC, #FF79DA);
-    color: white;
-    box-shadow: 0 0 10px #d4d4d4;
-    font-family: 'Roboto';
-  }
+p {
+  margin: 0;
+}
+
+.titre {
+  font-family: 'Shrikhand';
+  padding-left: 20px;
+}
+
+.sous_titre {
+  font-family: "Roboto";
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.ligne_titre {
+  border: 1px solid #99E2D0;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.image_restaurant {
+  height: 215px;
+}
+
+.image_restaurant img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  background-color: #F2F2F2;
+}
+
+.main_menu {
+  display: flex;
+  background-color: #F2F2F2;
+  border-radius: 30px 30px 0 0;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 20px;
+  top: -26px;
+}
+
+.Menu_restaurants {
+  gap: 5px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.Menu_restaurant {
+  width: 95%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.Nom_description {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px;
+  padding-left: 10px;
+  border: 5px solid #FFFFFF;
+  background: white;
+  box-shadow: 0 0 10px #d4d4d4;
+  justify-content: center;
+}
+
+.menutitre {
+  width: 250px;
+  gap: 10px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.Nom_description:hover .menutitre {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px;
+}
+
+.menutext {
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.Nom_description:hover .menutext {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 40px;
+}
+
+.prix {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  margin-top: -15px;
+  font-family: 'Roboto';
+  font-size: small;
+  font-weight: bold;
+}
+
+.bouton {
+  font-weight: 500;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  margin: auto;
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  color: white;
+  box-shadow: 0 0 10px #d4d4d4;
+  font-family: 'Roboto';
 }
 
 /* Fin menu version Mobile */
@@ -953,146 +1076,161 @@ head {
 
 /* Fin menu version PC */
 /* Début animation OhMyFood version Mobile */
-@media screen and (min-width: 375px) and (max-width: 549px) {
-  /* Loader du site (index) OhMyFood */
-  .wrapper {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    align-content: center;
-    gap: 20px;
-    padding-top: 235px;
-    justify-content: center;
-    animation: loaderR 3s ease-in-out forwards;
-  }
-  @keyframes loaderR {
-    0% {
-      opacity: 1;
-      z-index: 1000;
-      height: 100vh;
-      background-color: white;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  .rond {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    animation: bounce 3s ease-in-out infinite;
-  }
-  @keyframes bounce {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-45px);
-      opacity: 0.5;
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  /* Fin Loader du site (index) OhMyFood */
-  /* Bouton coeur menu */
-  .fa-heart {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    font-size: larger;
-    /* Animation TOP Menu */
-  }
-  .fa-heart:hover {
-    background: linear-gradient(#9356dc, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: color 1s ease-out;
-    font-weight: bold;
-  }
-  .Menu_restaurant {
-    animation: fade-in-top 1s;
-  }
-  @keyframes fade-in-top {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  }
-  /* Fin Animation TOP Menu */
-  /* Animation Coche Menu */
-  .coche {
-    position: absolute;
-    right: 8px;
-    border-radius: 0 15px 15px 0;
-  }
-  .croix {
-    position: absolute;
-    right: 8px;
-    border-radius: 0 15px 15px 0;
-  }
-  .fa-check-circle {
-    border: transparent 1px solid;
-    color: transparent;
-    width: 50px;
-  }
-  .Nom_description:hover .croix {
-    background-color: #99E2D0;
-    animation: fade-in-right 0.3s ease-out forwards;
-  }
-  .Nom_description:hover .coche {
-    background-color: #99E2D0;
-    animation: fade-in-right 0.3s ease-out forwards;
-  }
-  @keyframes fade-in-right {
-    0% {
-      transform: translateX(50px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  }
-  .Nom_description:hover .fa-check-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 54px;
-    width: 53px;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    border-radius: 0 15px 15px 0;
-    animation: fade-in-rotate 1s ease-out forwards;
-  }
-  @keyframes fade-in-rotate {
-    0% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  /* Fin animation Coche Menu */
-  /* Décalage prix coche */
-  .Nom_description:hover .prix {
-    animation: fade-in-right-price 0.5s ease-out forwards;
-  }
-  @keyframes fade-in-right-price {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(-50px);
-    }
-  }
-  /* Fin Décalage coche */
-  /* Fin animation OhMyFood version Mobile */
+/* Loader du site (index) OhMyFood */
+.wrapper {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  gap: 20px;
+  padding-top: 235px;
+  justify-content: center;
+  animation: loaderR 3s ease-in-out forwards;
 }
 
+@keyframes loaderR {
+  0% {
+    opacity: 1;
+    z-index: 1000;
+    height: 100vh;
+    background-color: white;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.rond {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-45px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Fin Loader du site (index) OhMyFood */
+/* Bouton coeur menu */
+.fa-heart {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: larger;
+  /* Animation TOP Menu */
+}
+
+.fa-heart:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 1s ease-out;
+  font-weight: bold;
+}
+
+.Menu_restaurant {
+  animation: fade-in-top 1s;
+}
+
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Fin Animation TOP Menu */
+/* Animation Coche Menu */
+.coche {
+  position: absolute;
+  right: 8px;
+  border-radius: 0 15px 15px 0;
+}
+
+.croix {
+  position: absolute;
+  right: 8px;
+  border-radius: 0 15px 15px 0;
+}
+
+.fa-check-circle {
+  border: transparent 1px solid;
+  color: transparent;
+  width: 50px;
+}
+
+.Nom_description:hover .croix {
+  background-color: #99E2D0;
+  animation: fade-in-right 0.3s ease-out forwards;
+}
+
+.Nom_description:hover .coche {
+  background-color: #99E2D0;
+  animation: fade-in-right 0.3s ease-out forwards;
+}
+
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.Nom_description:hover .fa-check-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  width: 53px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 15px 15px 0;
+  animation: fade-in-rotate 1s ease-out forwards;
+}
+
+@keyframes fade-in-rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fin animation Coche Menu */
+/* Décalage prix coche */
+.Nom_description:hover .prix {
+  animation: fade-in-right-price 0.5s ease-out forwards;
+}
+
+@keyframes fade-in-right-price {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+/* Fin Décalage coche */
+/* Fin animation OhMyFood version Mobile */
 /* Début animation OhMyFood version Tablette */
 @media screen and (min-width: 550px) and (max-width: 768px) {
   /* Loader du site (index) OhMyFood */

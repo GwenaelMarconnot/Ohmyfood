@@ -1,5 +1,15 @@
-/* Mise en page du logo du header du site OhMyFood version Mobile - Tablette */
-@media screen and (min-width: 375px) and (max-width: 4500px)
+/* Mise en place logo en version Mobile */
+#logo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Shrikhand';
+}
+/* Mise en page du logo du header du site OhMyFood version Tablette - PC */
+@media screen and (min-width: 550px) and (max-width: 4500px)
 {
 #logo{
     display: flex;
